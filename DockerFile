@@ -1,0 +1,4 @@
+FROM openjdk:11
+EXPOSE 8080
+ADD target/books-application.jar books-application.jar
+ENTRYPOINT ["java","-jar","/books-application.jar"]
